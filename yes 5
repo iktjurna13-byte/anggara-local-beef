@@ -1,0 +1,32 @@
+
+---
+
+## 📄 File 5: README.md (Update)
+
+```markdown
+# 🥩 Anggara Local Beef - Website
+
+Website e-commerce untuk penjualan daging sapi lokal berkualitas tinggi dari Pasar Kumbasari, Denpasar, Bali.
+
+## ✨ Fitur
+
+- ✅ Homepage responsif dengan hero section
+- ✅ Katalog produk dengan 4 jenis daging berkualitas
+- ✅ Form pemesanan online terintegrasi WhatsApp
+- ✅ Testimoni pelanggan
+- ✅ Mobile-first responsive design
+- ✅ WhatsApp button sticky
+- ✅ SEO friendly
+
+## 🛠️ Teknologi
+
+- HTML5, CSS3, Vanilla JavaScript
+- Unsplash CDN untuk gambar
+- WhatsApp Business API
+- Static hosting (GitHub Pages, Netlify, Vercel)
+
+## 🚀 Instalasi
+
+```bash
+git clone https://github.com/jurna/anggara-local-beef.git
+cd anggara-local-beef
