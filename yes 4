@@ -1,0 +1,44 @@
+# Arsitektur Anggara Local Beef Website
+
+## Diagram Arsitektur Sistem
+
+```mermaid
+graph TB
+    subgraph Client["🖥️ Client Side"]
+        Browser["Web Browser"]
+    end
+
+    subgraph Frontend["📱 Frontend Layer"]
+        HTML["index.html<br/>Struktur Halaman"]
+        CSS["styles.css<br/>Styling & Responsive"]
+        JS["script.js<br/>Interaksi & Validasi"]
+    end
+
+    subgraph Assets["🎨 Static Assets"]
+        Images["Unsplash Images<br/>Produk & Hero"]
+        Icons["Icons & Graphics"]
+    end
+
+    subgraph External["🌐 External Services"]
+        WhatsApp["WhatsApp API<br/>Pesan Pesanan"]
+        ImageCDN["Image CDN<br/>Unsplash"]
+    end
+
+    subgraph Features["✨ Fitur Utama"]
+        Navigation["Navigasi Menu"]
+        ProductCards["Produk Cards"]
+        OrderForm["Form Pemesanan"]
+        Testimonials["Testimoni"]
+        StickyButton["WhatsApp Button"]
+    end
+
+    Client -->|Akses| Browser
+    Browser -->|Load| HTML
+    HTML -->|Style| CSS
+    HTML -->|Interaksi| JS
+    HTML -->|Menampilkan| Images
+    Images -->|Muat dari| ImageCDN
+    JS -->|Validasi & Kirim| WhatsApp
+    CSS -->|Responsive Design|Features
+    JS -->|Form Handling| OrderForm
+    JS -->|Smooth Scroll| Navigation
